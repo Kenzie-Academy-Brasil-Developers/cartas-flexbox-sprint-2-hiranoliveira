@@ -10,6 +10,8 @@ html {
 
 .card {
     /* display, flex-direction */
+    display: flex;
+    flex-direction: column;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
@@ -17,6 +19,9 @@ html {
 
 .card__description {
     /* display, flex-direction, justify-content, align-items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 15px 0;
 }
 
@@ -41,15 +46,20 @@ html {
 
 .cardGroup {
     /* display */
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
   
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    max-width: 710px;
+    margin: 0 auto;
   }
   
     .cardGroup__card {
       /* flex-grow, flex-shrink, flex-basis */
-  
+      flex-basis: 33%;
       border: none;
       border-radius: 0;
     }
@@ -60,4 +70,6 @@ html {
   
     .cardGroup__cardDescription {
       /* flex-grow, flex-shrink, flex-basis */
+      flex-grow: 1;
+      flex-direction: column;
     }
